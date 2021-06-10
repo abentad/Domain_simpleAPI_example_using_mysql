@@ -1,0 +1,25 @@
+### Request 1
+GET http://localhost:3000/notes
+
+### Request 2
+POST http://localhost:3000/notes
+Content-Type: application/json
+
+{
+    "noteTitle": "added from postman",
+    "noteDescription": "description added from postman"
+}
+
+### Request 3
+DELETE  http://localhost:3000/notes/11
+
+### Request 3
+### to edit you have to input the id and the thing you want to edit
+PUT   http://localhost:3000/notes
+Content-Type: application/json
+
+{
+    "id": "7",
+    "noteTitle": "edited from rest client vscode",
+    "noteDescription": "edited description"
+}
